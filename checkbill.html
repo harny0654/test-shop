@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4ARS Payment</title>
+  <link rel="stylesheet" href="checkbill.css">
+  <script>
+    
+    function handlePayment() {
+      alert("Payment Successful!"); 
+      window.location.href = "bill.html";
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <button class="back-button"><a href="product copy.html">← กลับ</a></button>
+      <div class="header">
+        <img src="4ASR/Branner.png" alt="Banner" class="banner">
+        <div class="icon">
+          <img src="4ASR/logo.png" alt="RoV Icon">
+        </div>
+      </div>
+      <h2>4ARS : Check Bill</h2>
+      <div class="details">
+        <div class="detail-row">
+          <span>จำนวนทั้งหมด</span>
+          <span>4</span>
+        </div>
+        <div class="detail-row">
+          <span>ราคาต้น</span>
+          <span>250</span>
+        </div>
+        <div class="detail-row">
+          <span>+ VAT</span>
+          <span>5</span>
+        </div>
+        <div class="detail-row">
+          <span>ราคา</span>
+          <span>฿765</span>
+        </div>
+        <div class="detail-row">
+          <span>ตัวเลือกการชำระ:</span>
+          <span>QR Code Promptpay</span>
+        </div>
+        <div class="detail-row">
+          <span>ชื่อตัวผู้ชำระ</span>
+          <span>harny0654</span>
+        </div>
+      </div>
+      <button class="pay-button" onclick="handlePayment()">ทำการชำระเงิน</button>
+    </div>
+  </div>
+</body>
+</html>
